@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Blog Pessoal</title>
-	<link rel="stylesheet" type="text/css" href="projeto.css/projeto.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/projeto.css/projeto.css">
 	<link href="http://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,19 +55,22 @@
 					
 					<div class = "input">
 							<label>Nome</label>
-							<input type="text" name="Nome">
+							<input type="text" id = "nome" onkeyup ='validarNome()' name="Nome">
 					</div>
-					
+					<div id = "txtNome"></div>					
 					<div class = "input">
 							<label>Email</label>
-							<input type="email" name="emailadress">
+							<input type="email" id = "email" onkeyup = 'validarEmail()' name="emailadress">
 					</div>
+					<div id = "txtEmail"></div>
 					
-					<textarea></textarea>
+					<textarea name = "assunto " id = "assunto" onkeyup='validarAssunto()' ></textarea>
+					<div id = "txtAssunto"></div>
 
 					<div class = "b-enviar">
-							<input type="submit" name="enviar">
+							<button onclick='enviar()'>enviar</button>
 					</div>
+					
 
 			</form>
 	</section>
@@ -75,5 +78,6 @@
 	<footer>
 			<p>Direitos autorais garantidos</p>
 	</footer>
+	<script src = "asset/javascript/script.js" type="text/javascript"></script>
 </body>
 </html>
